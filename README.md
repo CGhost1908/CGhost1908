@@ -43,8 +43,17 @@
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+</p>
+
+**AI & ML**
+
+<p>
+  <img src="https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/Stable%20Diffusion%20XL-FF6F00?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure%20Vision-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
 </p>
 
 **Tools**
@@ -53,7 +62,7 @@
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" />
 </p>
 
 ---
@@ -62,14 +71,16 @@
 
 | Project | Description | Stack |
 |---|---|---|
-| [**comic-ai**](https://github.com/CGhost1908/comic-ai) | AI-powered comic generation | JavaScript |
-| [**iso-cartoon-talker**](https://github.com/CGhost1908/iso-cartoon-talker) | Talking isometric cartoon characters | Python |
-| [**pywebview-monaco-ide**](https://github.com/CGhost1908/pywebview-monaco-ide) | Lightweight desktop IDE with Monaco Editor + pywebview | JavaScript, Python |
-| [**face-recognize-system-for-business**](https://github.com/CGhost1908/face-recognize-system-for-business) | Face recognition system for businesses | Python |
-| [**tablet-extension**](https://github.com/CGhost1908/tablet-extension) | Browser extension | TypeScript |
-| [**nosh**](https://github.com/CGhost1908/nosh) | Web project | HTML, JavaScript |
-| [**Video-Player**](https://github.com/CGhost1908/Video-Player) | Custom web video player | JavaScript |
-| [**bungalow-reservation-system**](https://github.com/CGhost1908/bungalow-reservation-system) | Bungalow booking & reservation system | HTML |
+| [**NOSH**](https://github.com/CGhost1908/nosh) ([source](https://github.com/CGhost1908/nosh-source)) | Distraction-free code notepad with 15+ language code blocks, Google Drive sync & native Spotify playback | Electron, CodeMirror |
+| [**comic-ai**](https://github.com/CGhost1908/comic-ai) | AI comic & manga generator with Western comic and Japanese manga styles | JavaScript, Generative AI |
+| [**iso-cartoon-talker**](https://github.com/CGhost1908/iso-cartoon-talker) | Multi-modal pipeline that creates talking cartoon avatars from text, audio & images | Python, SDXL, Coqui TTS, SadTalker |
+| [**pywebview-monaco-ide**](https://github.com/CGhost1908/pywebview-monaco-ide) | Desktop IDE with Monaco Editor, Gemini AI completion, integrated terminal & AutoML studio | Python, pywebview, Gemini |
+| [**tablet-extension**](https://github.com/CGhost1908/tablet-extension) | VS Code extension: drawing pad with handwriting-to-code OCR | TypeScript, Azure Vision, Gemini |
+| [**UniFace**](https://github.com/CGhost1908/face-recognize-system-for-business) | Facial recognition & customer experience platform for cafes, restaurants and retail | Python, ONNX Runtime, Raspberry Pi |
+| [**bungalow-reservation-system**](https://github.com/CGhost1908/bungalow-reservation-system) | Bungalow reservation platform with admin panel, calendar & email notifications | Flask, FullCalendar |
+| [**president_settlement**](https://github.com/CGhost1908/president_settlement) | Browser-based isometric city-building & survival strategy game | JavaScript |
+| [**Video-Player**](https://github.com/CGhost1908/Video-Player) | Customizable, lightweight HTML5 video player component for React | React |
+| [**chess-location-quiz**](https://github.com/CGhost1908/chess-location-quiz) | Chess board vision & coordinate trainer with timed game modes | HTML, JavaScript |
 
 ---
 
@@ -80,7 +91,7 @@
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=CGhost1908&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CGhost1908&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=CGhost1908&theme=tokyonight&hide_border=true" />
+<img src="https://streak-stats.demolab.com/?user=CGhost1908&theme=tokyonight&hide_border=true" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=CGhost1908&theme=tokyo-night&hide_border=true&area=true" width="100%" />
 
