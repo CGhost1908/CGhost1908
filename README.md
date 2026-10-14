@@ -77,8 +77,6 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=CGhost1908&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CGhost1908&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" height="180" />
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=CGhost1908&theme=transparent&hide_border=true)](https://git.io/streak-stats)
 
