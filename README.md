@@ -1,17 +1,13 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:6366f1&height=60&section=header" width="100%" alt="Header wave accent" />
-
-<img src="./assets/banner.svg" width="100%" alt="Hey, I'm Eren — CGhost1908" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Python+%7C+FastAPI+%7C+Django;JavaScript+%7C+React+%7C+TypeScript;Building+web+apps%2C+tools+%26+agentic+systems" alt="Typing SVG" />
+  <img src="./assets/banner.svg" width="100%" alt="Eren Batı — CGhost1908" />
+</div>
 
 <br/>
 
-<a href="https://github.com/CGhost1908?tab=followers"><img src="https://img.shields.io/github/followers/CGhost1908?label=Followers&style=flat-square&color=6366f1" /></a>
-<a href="https://github.com/CGhost1908?tab=repositories"><img src="https://img.shields.io/github/stars/CGhost1908?affiliations=OWNER&label=Stars&style=flat-square&color=6366f1" /></a>
-<img src="https://img.shields.io/badge/Location-Istanbul%2C%20Turkey-6366f1?style=flat-square" />
-
+<div align="center">
+  <a href="https://github.com/CGhost1908?tab=followers"><img src="https://img.shields.io/github/followers/CGhost1908?label=Followers&style=flat-square&color=6366f1" /></a>
+  <a href="https://github.com/CGhost1908?tab=repositories"><img src="https://img.shields.io/github/stars/CGhost1908?affiliations=OWNER&label=Stars&style=flat-square&color=6366f1" /></a>
+  <img src="https://img.shields.io/badge/Location-Istanbul%2C%20Turkey-6366f1?style=flat-square" />
 </div>
 
 ---
