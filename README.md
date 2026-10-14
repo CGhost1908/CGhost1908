@@ -15,7 +15,6 @@
 ## 👋 About Me
 
 - 🎓 Studying **Computer Technology & Information Systems (CTIS)** at **Trakya University**
-- 📍 Based in **Istanbul, Turkey**
 - 💻 I build **web applications**, **desktop tools** and **AI-powered side projects**
 - 🌱 Currently exploring **AI integrations**, **browser extensions** and **developer tooling**
 - 📫 Reach me at **erenbatialtunkapak@gmail.com**
