@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Eren Batı — CGhost1908" />
+  <img src="./assets/banner.svg?v=coffee" width="100%" alt="Eren Batı — CGhost1908" />
 </div>
 
 <br/>
