@@ -1,0 +1,67 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.5" stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Subtle Grid -->
+    <pattern id="headerGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FFFFFF" stroke-opacity=".03" stroke-width="1"/>
+    </pattern>
+
+    <!-- Glows -->
+    <radialGradient id="glowCenter" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(600 120) scale(400 140)">
+      <stop stop-color="#6366F1" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text Accent Gradient -->
+    <linearGradient id="textGrad" x1="400" y1="90" x2="800" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.7" stop-color="#E0E7FF"/>
+      <stop offset="1" stop-color="#A5B4FC"/>
+    </linearGradient>
+
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, monospace; }
+      .fade { animation: fadeIn 1.2s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="240" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="240" rx="16" fill="url(#headerGrid)"/>
+  <rect width="1200" height="240" rx="16" fill="url(#glowCenter)"/>
+
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="238" rx="15" stroke="#6366F1" stroke-opacity=".3" stroke-width="1.5"/>
+
+  <!-- Content Group -->
+  <g class="fade">
+    <!-- Subtitle above -->
+    <text x="600" y="78" text-anchor="middle" class="mono" font-size="14" font-weight="600" letter-spacing="4" fill="#818CF8">
+      HEY, I'M
+    </text>
+
+    <!-- Main Name -->
+    <text x="600" y="134" text-anchor="middle" class="sans" font-size="52" font-weight="800" letter-spacing="1.5" fill="url(#textGrad)">
+      Eren Batı
+    </text>
+
+    <!-- Tag / Nickname -->
+    <text x="600" y="174" text-anchor="middle" class="mono" font-size="17" font-weight="500" letter-spacing="2" fill="#94A3B8">
+      — CGhost1908 —
+    </text>
+
+    <!-- Tiny status bar -->
+    <text x="600" y="206" text-anchor="middle" class="mono" font-size="12" fill="#64748B">
+      Full-Stack Developer · Trakya CTIS
+    </text>
+  </g>
+</svg>
