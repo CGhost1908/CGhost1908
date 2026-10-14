@@ -1,67 +1,237 @@
-<svg width="1200" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="240" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F172A"/>
-      <stop offset="0.5" stop-color="#1E1B4B"/>
-      <stop offset="1" stop-color="#0F172A"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0F19"/>
+      <stop offset="0.5" stop-color="#141829"/>
+      <stop offset="1" stop-color="#0B0F19"/>
     </linearGradient>
 
     <!-- Subtle Grid -->
-    <pattern id="headerGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FFFFFF" stroke-opacity=".03" stroke-width="1"/>
+    <pattern id="headerGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#FFFFFF" stroke-opacity=".03" stroke-width="1"/>
     </pattern>
 
-    <!-- Glows -->
-    <radialGradient id="glowCenter" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-      gradientTransform="translate(600 120) scale(400 140)">
-      <stop stop-color="#6366F1" stop-opacity=".25"/>
+    <!-- Center Indigo Glow -->
+    <radialGradient id="centerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(540 140) scale(420 160)">
+      <stop stop-color="#6366F1" stop-opacity=".22"/>
       <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Text Accent Gradient -->
-    <linearGradient id="textGrad" x1="400" y1="90" x2="800" y2="150" gradientUnits="userSpaceOnUse">
+    <!-- Ghost Glow -->
+    <radialGradient id="ghostGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(980 140) scale(180 140)">
+      <stop stop-color="#818CF8" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#818CF8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Name Gradient -->
+    <linearGradient id="nameGrad" x1="200" y1="90" x2="600" y2="150" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFFFFF"/>
-      <stop offset="0.7" stop-color="#E0E7FF"/>
-      <stop offset="1" stop-color="#A5B4FC"/>
+      <stop offset="0.75" stop-color="#EEF2FF"/>
+      <stop offset="1" stop-color="#C7D2FE"/>
+    </linearGradient>
+
+    <!-- Ghost Body Gradient -->
+    <linearGradient id="ghostBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#E0E7FF"/>
+      <stop offset="100%" stop-color="#C7D2FE"/>
     </linearGradient>
 
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
       .mono { font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, monospace; }
-      .fade { animation: fadeIn 1.2s ease-in-out; }
-      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+      /* Ghost Floating & Swaying Animation */
+      .ghost-float {
+        animation: ghostFloat 4s ease-in-out infinite;
+        transform-origin: 980px 140px;
+      }
+      @keyframes ghostFloat {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(2.5deg); }
+      }
+
+      /* Blinking Twinkles / Crosses */
+      .twinkle1 { animation: twinkle 3s ease-in-out infinite; }
+      .twinkle2 { animation: twinkle 4s ease-in-out infinite 1s; }
+      .twinkle3 { animation: twinkle 5s ease-in-out infinite 2s; }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.85); }
+        50% { opacity: 0.9; transform: scale(1.15); }
+      }
+
+      /* Animated Dashed Lines */
+      .dash-flow {
+        stroke-dasharray: 6 8;
+        animation: dashFlow 20s linear infinite;
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -200; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .ghost-float, .twinkle1, .twinkle2, .twinkle3, .dash-flow { animation: none !important; }
+      }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="240" rx="16" fill="url(#bgGrad)"/>
-  <rect width="1200" height="240" rx="16" fill="url(#headerGrid)"/>
-  <rect width="1200" height="240" rx="16" fill="url(#glowCenter)"/>
+  <!-- Background Base -->
+  <rect width="1200" height="280" rx="18" fill="url(#bgGrad)"/>
+  <rect width="1200" height="280" rx="18" fill="url(#headerGrid)"/>
+  <rect width="1200" height="280" rx="18" fill="url(#centerGlow)"/>
+  <rect width="1200" height="280" rx="18" fill="url(#ghostGlow)"/>
 
-  <!-- Border -->
-  <rect x="1" y="1" width="1198" height="238" rx="15" stroke="#6366F1" stroke-opacity=".3" stroke-width="1.5"/>
+  <!-- Outer Sleek Border -->
+  <rect x="1" y="1" width="1198" height="278" rx="17" stroke="#6366F1" stroke-opacity=".28" stroke-width="1.5"/>
 
-  <!-- Content Group -->
-  <g class="fade">
-    <!-- Subtitle above -->
-    <text x="600" y="78" text-anchor="middle" class="mono" font-size="14" font-weight="600" letter-spacing="4" fill="#818CF8">
-      HEY, I'M
-    </text>
+  <!-- ================= BACKGROUND DECORATIONS (LINES, PLUSES, DOTS) ================= -->
+  
+  <!-- Plus Crosses (+) Scattered -->
+  <g stroke="#818CF8" stroke-width="1.8" stroke-linecap="round">
+    <!-- Top Left -->
+    <g class="twinkle1" transform-origin="120 50">
+      <line x1="120" y1="44" x2="120" y2="56" />
+      <line x1="114" y1="50" x2="126" y2="50" />
+    </g>
+    <g class="twinkle2" transform-origin="280 40">
+      <line x1="280" y1="36" x2="280" y2="44" />
+      <line x1="276" y1="40" x2="284" y2="40" stroke-width="1.4"/>
+    </g>
+    <!-- Bottom Left -->
+    <g class="twinkle3" transform-origin="160 220">
+      <line x1="160" y1="213" x2="160" y2="227" />
+      <line x1="153" y1="220" x2="167" y2="220" />
+    </g>
+    <!-- Center / Floating -->
+    <g class="twinkle2" transform-origin="720 60">
+      <line x1="720" y1="53" x2="720" y2="67" />
+      <line x1="713" y1="60" x2="727" y2="60" />
+    </g>
+    <g class="twinkle1" transform-origin="760 230">
+      <line x1="760" y1="224" x2="760" y2="236" />
+      <line x1="754" y1="230" x2="766" y2="230" />
+    </g>
+    <!-- Near Ghost -->
+    <g class="twinkle3" transform-origin="1110 80">
+      <line x1="1110" y1="73" x2="1110" y2="87" stroke="#A5B4FC" />
+      <line x1="1103" y1="80" x2="1117" y2="80" stroke="#A5B4FC" />
+    </g>
+    <g class="twinkle1" transform-origin="1130 210">
+      <line x1="1130" y1="205" x2="1130" y2="215" stroke-width="1.4"/>
+      <line x1="1125" y1="210" x2="1135" y2="210" stroke-width="1.4"/>
+    </g>
+  </g>
+
+  <!-- Sparkle Stars (✦) -->
+  <g fill="#A5B4FC">
+    <path class="twinkle2" d="M 680 180 Q 680 186 686 186 Q 680 186 680 192 Q 680 186 674 186 Q 680 186 680 180 Z" opacity=".7"/>
+    <path class="twinkle1" d="M 860 70 Q 860 77 867 77 Q 860 77 860 84 Q 860 77 853 77 Q 860 77 860 70 Z" opacity=".8"/>
+    <path class="twinkle3" d="M 230 170 Q 230 175 235 175 Q 230 175 230 180 Q 230 175 225 175 Q 230 175 230 170 Z" opacity=".5"/>
+  </g>
+
+  <!-- Technical Circuit Lines & Dots -->
+  <g opacity=".35">
+    <path class="dash-flow" d="M 60 140 H 130 L 160 170 H 210" stroke="#6366F1" stroke-width="1.5" fill="none"/>
+    <circle cx="60" cy="140" r="3" fill="#6366F1"/>
+    <circle cx="210" cy="170" r="3" fill="#818CF8"/>
+
+    <path class="dash-flow" d="M 730 140 H 800 L 830 110 H 870" stroke="#818CF8" stroke-width="1.5" fill="none"/>
+    <circle cx="730" cy="140" r="3" fill="#818CF8"/>
+    <circle cx="870" cy="110" r="3" fill="#C7D2FE"/>
+
+    <!-- Subtle Dot Matrix Clusters -->
+    <g fill="#475569" opacity=".5">
+      <circle cx="100" cy="70" r="1.5"/><circle cx="112" cy="70" r="1.5"/><circle cx="124" cy="70" r="1.5"/>
+      <circle cx="100" cy="82" r="1.5"/><circle cx="112" cy="82" r="1.5"/><circle cx="124" cy="82" r="1.5"/>
+      <circle cx="100" cy="94" r="1.5"/><circle cx="112" cy="94" r="1.5"/><circle cx="124" cy="94" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- ================= TEXT HERO CONTENT (LEFT / CENTER-ALIGNED) ================= -->
+  <g transform="translate(180, 0)">
+    <!-- Terminal Tag -->
+    <g transform="translate(0, 58)">
+      <rect width="130" height="24" rx="12" fill="#1E1B4B" stroke="#4338CA" stroke-width="1"/>
+      <circle cx="14" cy="12" r="3.5" fill="#38BDF8"/>
+      <text x="26" y="15.5" class="mono" font-size="11" font-weight="600" letter-spacing="1.5" fill="#C7D2FE">DEV // PORTFOLIO</text>
+    </g>
 
     <!-- Main Name -->
-    <text x="600" y="134" text-anchor="middle" class="sans" font-size="52" font-weight="800" letter-spacing="1.5" fill="url(#textGrad)">
+    <text x="0" y="132" class="sans" font-size="52" font-weight="800" letter-spacing="1" fill="url(#nameGrad)">
       Eren Batı
     </text>
 
-    <!-- Tag / Nickname -->
-    <text x="600" y="174" text-anchor="middle" class="mono" font-size="17" font-weight="500" letter-spacing="2" fill="#94A3B8">
+    <!-- Handle & Subtitle -->
+    <text x="0" y="172" class="mono" font-size="17" font-weight="500" letter-spacing="1.5" fill="#818CF8">
       — CGhost1908 —
     </text>
 
-    <!-- Tiny status bar -->
-    <text x="600" y="206" text-anchor="middle" class="mono" font-size="12" fill="#64748B">
-      Full-Stack Developer · Trakya CTIS
+    <text x="0" y="206" class="mono" font-size="13" fill="#94A3B8">
+      Full-Stack Developer · Trakya University CTIS
     </text>
+
+    <!-- Small Pills -->
+    <g transform="translate(0, 226)">
+      <rect width="84" height="22" rx="11" fill="#161B22" stroke="#30363D"/>
+      <text x="42" y="14.5" text-anchor="middle" class="mono" font-size="10" fill="#38BDF8">FASTAPI</text>
+
+      <rect x="92" width="76" height="22" rx="11" fill="#161B22" stroke="#30363D"/>
+      <text x="130" y="14.5" text-anchor="middle" class="mono" font-size="10" fill="#818CF8">REACT</text>
+
+      <rect x="176" width="76" height="22" rx="11" fill="#161B22" stroke="#30363D"/>
+      <text x="214" y="14.5" text-anchor="middle" class="mono" font-size="10" fill="#A5B4FC">OLLAMA</text>
+    </g>
+  </g>
+
+  <!-- ================= CUTE FLOATING GHOST CHARACTER (CGhost) ================= -->
+  <g class="ghost-float">
+    <!-- Ghost Soft Drop Shadow -->
+    <ellipse cx="980" cy="225" rx="46" ry="9" fill="#000000" opacity=".35"/>
+
+    <!-- Ghost Body -->
+    <g transform="translate(920, 65)">
+      <!-- Body Path with Ruffled Cute Waves at bottom -->
+      <path d="M 60 0 
+               C 24 0, 0 28, 0 68
+               C 0 102, 6 122, 6 130
+               C 10 134, 18 134, 22 126
+               C 26 118, 34 118, 38 126
+               C 42 134, 50 134, 54 126
+               C 58 118, 66 118, 70 126
+               C 74 134, 82 134, 86 126
+               C 90 118, 98 118, 102 126
+               C 106 134, 114 134, 118 128
+               C 120 122, 120 102, 120 68
+               C 120 28, 96 0, 60 0 Z" 
+            fill="url(#ghostBody)"/>
+
+      <!-- Cute Blushing Cheeks -->
+      <ellipse cx="32" cy="74" rx="8" ry="4.5" fill="#F472B6" opacity=".55"/>
+      <ellipse cx="88" cy="74" rx="8" ry="4.5" fill="#F472B6" opacity=".55"/>
+
+      <!-- Big Kawaii Eyes -->
+      <ellipse cx="40" cy="62" rx="6.5" ry="8.5" fill="#0F172A"/>
+      <circle cx="38" cy="59" r="2.6" fill="#FFFFFF"/>
+      <circle cx="42" cy="65" r="1.3" fill="#FFFFFF"/>
+
+      <ellipse cx="80" cy="62" rx="6.5" ry="8.5" fill="#0F172A"/>
+      <circle cx="78" cy="59" r="2.6" fill="#FFFFFF"/>
+      <circle cx="82" cy="65" r="1.3" fill="#FFFFFF"/>
+
+      <!-- Happy Smile -->
+      <path d="M 54 73 Q 60 80 66 73" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Tiny Ghost Hands / Floating Arms -->
+      <!-- Left Hand Waving -->
+      <path d="M 4 72 C -8 68, -12 56, -4 52 C 4 48, 10 60, 6 70" fill="#EEF2FF"/>
+      <!-- Right Hand -->
+      <path d="M 116 72 C 126 74, 130 84, 122 88 C 114 92, 110 80, 114 72" fill="#E0E7FF"/>
+
+      <!-- Cute Sparkle on Ghost Head -->
+      <path class="twinkle1" d="M 18 10 Q 18 16 24 16 Q 18 16 18 22 Q 18 16 12 16 Q 18 16 18 10 Z" fill="#FDE047"/>
+    </g>
   </g>
 </svg>
