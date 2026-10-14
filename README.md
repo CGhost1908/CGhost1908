@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:6366f1&height=180&section=header&text=Eren%20Bat%C4%B1&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20CTIS%20%40%20Trakya%20University&descAlignY=58&descSize=16" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Python+%7C+Flask+%7C+Django;JavaScript+%7C+React+%7C+TypeScript;Building+web+apps%2C+tools+%26+AI+experiments" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=6366F1&center=true&vCenter=true&width=520&lines=Python+%7C+FastAPI+%7C+Django;JavaScript+%7C+React+%7C+TypeScript;Building+web+apps%2C+tools+%26+agentic+systems" alt="Typing SVG" />
 
 <br/>
 
