@@ -73,23 +73,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-| Project | Description | Stack |
-|:---|:---|:---|
-| [**NOSH**](https://github.com/CGhost1908/nosh) · [source](https://github.com/CGhost1908/nosh-source) | Distraction-free code notepad with 15+ language code blocks, Google Drive sync & native Spotify playback | Electron, CodeMirror |
-| [**comic-ai**](https://github.com/CGhost1908/comic-ai) | AI comic & manga generator with Western comic and Japanese manga styles | JavaScript, Generative AI |
-| [**iso-cartoon-talker**](https://github.com/CGhost1908/iso-cartoon-talker) | Multi-modal pipeline that creates talking cartoon avatars from text, audio & images | Python, SDXL, Coqui TTS, SadTalker |
-| [**pywebview-monaco-ide**](https://github.com/CGhost1908/pywebview-monaco-ide) | Desktop IDE with Monaco Editor, Gemini AI completion, integrated terminal & AutoML studio | Python, pywebview, Gemini |
-| [**tablet-extension**](https://github.com/CGhost1908/tablet-extension) | VS Code extension: drawing pad with handwriting-to-code OCR | TypeScript, Azure Vision, Gemini |
-| [**UniFace**](https://github.com/CGhost1908/face-recognize-system-for-business) | Facial recognition & customer experience platform for cafes, restaurants and retail | Python, ONNX Runtime, Raspberry Pi |
-| [**bungalow-reservation-system**](https://github.com/CGhost1908/bungalow-reservation-system) | Bungalow reservation platform with admin panel, calendar & email notifications | Flask, FullCalendar |
-| [**president_settlement**](https://github.com/CGhost1908/president_settlement) | Browser-based isometric city-building & survival strategy game | JavaScript |
-| [**Video-Player**](https://github.com/CGhost1908/Video-Player) | Customizable, lightweight HTML5 video player component for React | React |
-| [**chess-location-quiz**](https://github.com/CGhost1908/chess-location-quiz) | Chess board vision & coordinate trainer with timed game modes | HTML, JavaScript |
-
----
-
 ## 📊 GitHub Stats
 
 <div align="center">
