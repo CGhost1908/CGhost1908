@@ -75,7 +75,7 @@
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=CGhost1908&theme=transparent&hide_border=true)](https://git.io/streak-stats)
 
-<img src="https://ghchart.rshah.org/6366f1/CGhost1908" alt="Contribution chart" width="100%" />
+<img src="./assets/chart.svg" alt="Contribution chart" width="100%" />
 
 </div>
 
