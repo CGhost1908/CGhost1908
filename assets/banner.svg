@@ -44,7 +44,7 @@
       .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
       .mono { font-family: "JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, monospace; }
 
-      /* Ghost Floating & Swaying Animation */
+      /* Ghost Floating and Swaying Animation */
       .ghost-float {
         animation: ghostFloat 4s ease-in-out infinite;
         transform-origin: 980px 140px;
@@ -132,7 +132,7 @@
     <path class="twinkle3" d="M 230 170 Q 230 175 235 175 Q 230 175 230 180 Q 230 175 225 175 Q 230 175 230 170 Z" opacity=".5"/>
   </g>
 
-  <!-- Technical Circuit Lines & Dots -->
+  <!-- Technical Circuit Lines and Dots -->
   <g opacity=".35">
     <path class="dash-flow" d="M 60 140 H 130 L 160 170 H 210" stroke="#6366F1" stroke-width="1.5" fill="none"/>
     <circle cx="60" cy="140" r="3" fill="#6366F1"/>
@@ -164,7 +164,7 @@
       Eren Batı
     </text>
 
-    <!-- Handle & Subtitle -->
+    <!-- Handle and Subtitle -->
     <text x="0" y="172" class="mono" font-size="17" font-weight="500" letter-spacing="1.5" fill="#818CF8">
       — CGhost1908 —
     </text>
