@@ -2,8 +2,11 @@ name: Update Contribution Chart
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Her gece 00:00 UTC çalışır
+    - cron: '0 0 * * *' # Her gece 00:00 UTC calisir
   workflow_dispatch: # Manuel tetikleme butonu
+
+permissions:
+  contents: write
 
 jobs:
   build:
